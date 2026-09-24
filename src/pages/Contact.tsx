@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, MessageCircle, Navigation, Instagram, Mail, MapPin, Star } from 'lucide-react';
+import { Phone, MessageCircle, Navigation, Share2, Mail, MapPin, Star } from 'lucide-react';
 import { contactConfig } from '../config/contact';
 import { salonData } from '../data/salon';
 import clsx from 'clsx';
@@ -45,7 +45,7 @@ export default function Contact() {
       available: !!contactConfig.googleMaps,
     },
     {
-      icon: Instagram,
+      icon: Share2,
       label: 'Instagram',
       sublabel: contactConfig.instagram ? '@' + contactConfig.instagram.split('/').pop() : 'Handle to be configured',
       href: contactConfig.instagram || '#',

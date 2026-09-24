@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Instagram, Mail, Phone, MessageCircle } from 'lucide-react';
+import { MapPin, Share2, Mail, Phone, MessageCircle } from 'lucide-react';
 import { salonData } from '../../data/salon';
 import { contactConfig } from '../../config/contact';
 
@@ -30,7 +30,7 @@ export default function Footer() {
               {contactConfig.instagram && (
                 <a href={contactConfig.instagram} target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors">
-                  <Instagram size={16} />
+                  <Share2 size={16} />
                 </a>
               )}
               {contactConfig.whatsapp && (
